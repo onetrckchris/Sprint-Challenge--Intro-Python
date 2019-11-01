@@ -35,10 +35,8 @@ print(b)
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with any letter between 'C' and 'G' inclusive.
-import re
-
 print("Starts between C and G, inclusive:")
-c = [human.name for human in humans if re.findall('[C-G]', human.name[0])]
+c = [human.name for human in humans if 'C' <= human.name[0] <= 'G']
 print(c)
 
 # Write a list comprehension that creates a list of all the ages plus 10.
